@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+  Reboku Privacy Policy — static page for GitHub Pages (dino9021.github.io/reboku-privacy).
+  Generated from store-assets/privacy-policy.md (keep them in sync).
+  TO PUBLISH: upload this file as `index.html` to the reboku-privacy repo, AND fill in the
+  contact email placeholder below (search for FILL-IN-EMAIL) in both the 中文 and English blocks.
+-->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all">
+<title>Reboku 隱私權政策 / Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.1rem 4rem;
+    font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.7; color: #1f2328; background: #ffffff;
+    max-width: 780px; margin-inline: auto; word-wrap: break-word;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #16181c; }
+    a { color: #6cb6ff; }
+    code { background: #2a2d33; }
+    hr { border-color: #333; }
+    .muted { color: #9aa0a6; }
+  }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 .3rem; }
+  h2 { font-size: 1.3rem; margin: 2.4rem 0 .8rem; padding-bottom: .3rem; border-bottom: 2px solid currentColor; opacity: .95; }
+  h3 { font-size: 1.08rem; margin: 1.6rem 0 .4rem; }
+  p, ul { margin: .5rem 0; }
+  ul { padding-inline-start: 1.4rem; }
+  code { background: #f0f1f3; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  a { color: #0969da; overflow-wrap: anywhere; }
+  hr { border: none; border-top: 1px solid #d0d7de; margin: 2rem 0; }
+  .muted { color: #6a737d; font-size: .92rem; }
+  .updated { margin: .2rem 0 0; }
+</style>
+</head>
+<body>
+
+<h1>Reboku 隱私權政策 / Privacy Policy</h1>
+<p class="updated muted">最後更新 / Last updated: 2026-07-24</p>
+
+<hr>
+
+<h2>正體中文</h2>
+
+<p><strong>Reboku</strong>（套件名 <code>com.reboku.reader</code>,以下稱「本 App」）是一款電子書閱讀器。你的閱讀資料只留在你的裝置;本 App 免費下載並顯示廣告,可透過<strong>應用程式內購買</strong>一次性解鎖「完整版」以移除廣告與各項上限。</p>
+
+<h3>你的閱讀資料</h3>
+<p>你匯入的書籍、閱讀進度、書籤、書架與各項設定,<strong>全部只儲存在你的裝置本機</strong>,本 App 不會收集、上傳或分享這些資料,開發者也無法存取。移除本 App 即會一併刪除這些本機資料。</p>
+
+<h3>廣告（僅免費版）</h3>
+<p><strong>免費版</strong>透過 Google AdMob 顯示廣告。為了投放廣告,Google 的廣告 SDK 可能會收集與使用<strong>裝置識別碼(廣告 ID)、裝置與粗略概略位置(由 IP 推估)、以及廣告互動資料</strong>等,詳見 Google 的說明:</p>
+<ul>
+  <li>Google 廣告與隱私:<a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+  <li>若你在歐洲經濟區/英國,App 首次啟動會依規定跳出<strong>同意視窗</strong>讓你選擇。</li>
+</ul>
+<p><strong>付費版(已購買解鎖)不含廣告、不初始化廣告 SDK,因而不會有上述廣告相關的資料收集。</strong></p>
+
+<h3>應用程式內購買（一次買斷解鎖）</h3>
+<p>本 App 提供一次性的「完整版」解鎖(移除廣告、書庫與書架上限)。<strong>付款完全由 Google Play 處理</strong>,本 App 與開發者<strong>不會收到、也不會儲存</strong>你的付款資料(卡號等)。本 App 只在你的裝置本機記錄一個「已解鎖」狀態,並向 Google Play 查詢以確認/還原你的購買(換裝置或重裝時自動還原);這些購買驗證不經過開發者的任何伺服器(本 App 無自有伺服器)。退款後,下次連上 Google Play 時會自動回復為免費版。</p>
+
+<h3>網路權限</h3>
+<p>本 App 具有網路(INTERNET)權限,<strong>僅用於免費版的廣告</strong>(未來若加入線上書目 OPDS 亦會用到)。你的閱讀資料本身不會被傳出裝置。</p>
+
+<h3>背景朗讀相關權限</h3>
+<p>為了讓「朗讀」在關閉螢幕或切到其他 App 時能繼續,本 App 具有<strong>前景服務(FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>、<strong>保持喚醒(WAKE_LOCK)</strong> 與<strong>通知(POST_NOTIFICATIONS)</strong> 權限:朗讀進行時會顯示一個媒體控制通知(可暫停/停止),並在句與句之間短暫保持裝置喚醒。這些權限<strong>只在你啟用朗讀時使用</strong>,不涉及任何資料收集或傳輸。</p>
+
+<h3>其他第三方</h3>
+<p>使用「朗讀」時會呼叫你裝置上的系統語音引擎;使用「查詢／查字典」時會依你的選擇開啟你裝置上的其他 App。那些 App 各有自己的隱私權政策,不在本政策範圍內。</p>
+
+<h3>系統備份</h3>
+<p>Android 系統的「自動備份」可能會把本 App 的本機資料備份到「你自己的」Google 帳號雲端。開發者無法存取;可在裝置「設定 → Google → 備份」管理或關閉。</p>
+
+<h3>兒童</h3>
+<p>本 App 不針對兒童設計。</p>
+
+<h3>政策變更</h3>
+<p>若本政策更新,會同步更新本頁「最後更新」日期。</p>
+
+<h3>聯絡方式</h3>
+<p>如有疑問,請聯絡:<strong>Reboku.app@gmail.com</strong> <!-- FILL-IN-EMAIL --></p>
+
+<hr>
+
+<h2>English</h2>
+
+<p><strong>Reboku</strong> (package <code>com.reboku.reader</code>, the "App") is an eBook reader. Your reading data stays on your device; the App is free and shows ads, and offers a one-time <strong>in-app purchase</strong> to unlock the full version (removing ads and limits).</p>
+
+<h3>Your reading data</h3>
+<p>The books you import, your reading positions, bookmarks, shelves, and settings are <strong>stored solely on your device</strong>. The App does not collect, transmit, or share this data, and the developer cannot access it. Uninstalling the App deletes this local data.</p>
+
+<h3>Ads (free version only)</h3>
+<p>The <strong>free version</strong> shows ads via Google AdMob. To serve ads, Google's ad SDK may collect and use <strong>device identifiers (advertising ID), device and coarse/approximate location (derived from IP), and ad-interaction data</strong>, among others. See:</p>
+<ul>
+  <li>Google Ads &amp; Privacy: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+  <li>If you are in the EEA/UK, a <strong>consent form</strong> is shown on first launch as required.</li>
+</ul>
+<p><strong>The paid (purchased/unlocked) version contains no ads and never initializes the ad SDK, so none of the above ad-related collection occurs.</strong></p>
+
+<h3>In-app purchase (one-time unlock)</h3>
+<p>The App offers a one-time "full version" unlock (removes ads and the library/shelf limits). <strong>Payment is handled entirely by Google Play</strong>; neither the App nor the developer receives or stores your payment details. The App only records an "unlocked" flag locally on your device and queries Google Play to verify/restore your purchase (auto-restored on a new device or reinstall); this verification does not pass through any developer server (the App has none). After a refund, the App reverts to the free version the next time it reaches Google Play.</p>
+
+<h3>Network permission</h3>
+<p>The App holds the INTERNET permission <strong>used only for ads in the free version</strong> (and, in future, for an online OPDS catalog). Your reading data itself is not sent off the device.</p>
+
+<h3>Background read-aloud permissions</h3>
+<p>So "Read aloud" can keep playing with the screen off or while you switch apps, the App holds <strong>foreground-service (FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>, <strong>WAKE_LOCK</strong>, and <strong>notification (POST_NOTIFICATIONS)</strong> permissions: while reading aloud, a media-controls notification is shown (pause/stop) and the device is kept briefly awake between sentences. These permissions are <strong>used only while you have read-aloud running</strong> and involve no data collection or transmission.</p>
+
+<h3>Other third parties</h3>
+<p>"Read aloud" invokes your device's system text-to-speech engine; "look up / dictionary" opens another app of your choosing. Those apps have their own privacy policies, outside the scope of this one.</p>
+
+<h3>System backup</h3>
+<p>Android's Auto Backup may back up the App's local data to <em>your own</em> Google account cloud. The developer cannot access it; manage or disable it under Settings → Google → Backup.</p>
+
+<h3>Children</h3>
+<p>The App is not directed at children.</p>
+
+<h3>Changes</h3>
+<p>If this policy changes, the "Last updated" date above will be updated.</p>
+
+<h3>Contact</h3>
+<p>Questions: <strong>Reboku.app@gmail.com</strong> <!-- FILL-IN-EMAIL --></p>
+
+</body>
+</html>
