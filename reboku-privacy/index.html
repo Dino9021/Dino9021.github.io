@@ -65,7 +65,7 @@
 <p>本 App 提供一次性的「完整版」解鎖(移除廣告、書庫與書架上限)。<strong>付款完全由 Google Play 處理</strong>,本 App 與開發者<strong>不會收到、也不會儲存</strong>你的付款資料(卡號等)。本 App 只在你的裝置本機記錄一個「已解鎖」狀態,並向 Google Play 查詢以確認/還原你的購買(換裝置或重裝時自動還原);這些購買驗證不經過開發者的任何伺服器(本 App 無自有伺服器)。退款後,下次連上 Google Play 時會自動回復為免費版。</p>
 
 <h3>網路權限</h3>
-<p>本 App 具有網路(INTERNET)權限,<strong>僅用於免費版的廣告</strong>(未來若加入線上書目 OPDS 亦會用到)。你的閱讀資料本身不會被傳出裝置。</p>
+<p>本 App 具有網路(INTERNET)權限,用於:<strong>(1) 免費版的廣告</strong>;<strong>(2) 取得本隱私權政策與版權宣告的最新版本</strong> —— App 會在啟動時於背景抓一次並存在裝置上(每天最多一次),讓你隨時(含離線時)都看得到最新條文,這個連線只會下載那兩份靜態網頁、<strong>不會上傳任何東西</strong>,但與任何網頁請求一樣,對方伺服器(GitHub Pages)會看到你的 IP;<strong>(3) 向 Google Play 查詢購買狀態</strong>(見上)。未來若加入線上書目 OPDS 亦會用到。<strong>你的閱讀資料本身不會被傳出裝置。</strong></p>
 
 <h3>背景朗讀相關權限</h3>
 <p>為了讓「朗讀」在關閉螢幕或切到其他 App 時能繼續,本 App 具有<strong>前景服務(FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>、<strong>保持喚醒(WAKE_LOCK)</strong> 與<strong>通知(POST_NOTIFICATIONS)</strong> 權限:朗讀進行時會顯示一個媒體控制通知(可暫停/停止),並在句與句之間短暫保持裝置喚醒。這些權限<strong>只在你啟用朗讀時使用</strong>,不涉及任何資料收集或傳輸。</p>
@@ -106,7 +106,7 @@
 <p>The App offers a one-time "full version" unlock (removes ads and the library/shelf limits). <strong>Payment is handled entirely by Google Play</strong>; neither the App nor the developer receives or stores your payment details. The App only records an "unlocked" flag locally on your device and queries Google Play to verify/restore your purchase (auto-restored on a new device or reinstall); this verification does not pass through any developer server (the App has none). After a refund, the App reverts to the free version the next time it reaches Google Play.</p>
 
 <h3>Network permission</h3>
-<p>The App holds the INTERNET permission <strong>used only for ads in the free version</strong> (and, in future, for an online OPDS catalog). Your reading data itself is not sent off the device.</p>
+<p>The App holds the INTERNET permission for: <strong>(1) ads in the free version</strong>; <strong>(2) fetching the latest version of this privacy policy and the copyright notice</strong> — the App downloads them once in the background at startup (at most once a day) and stores them on your device, so you can always read the current text, including offline. That request only downloads those two static pages and <strong>uploads nothing</strong>, though — as with any web request — the serving host (GitHub Pages) sees your IP address; <strong>(3) checking your purchase state with Google Play</strong> (see above). An online OPDS catalog may use it in future. <strong>Your reading data itself is not sent off the device.</strong></p>
 
 <h3>Background read-aloud permissions</h3>
 <p>So "Read aloud" can keep playing with the screen off or while you switch apps, the App holds <strong>foreground-service (FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>, <strong>WAKE_LOCK</strong>, and <strong>notification (POST_NOTIFICATIONS)</strong> permissions: while reading aloud, a media-controls notification is shown (pause/stop) and the device is kept briefly awake between sentences. These permissions are <strong>used only while you have read-aloud running</strong> and involve no data collection or transmission.</p>
