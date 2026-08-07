@@ -52,7 +52,42 @@
 
 <h3>你的閱讀資料</h3>
 
-<p>你匯入的書籍、閱讀進度、書籤、書架與各項設定,<strong>全部只儲存在你的裝置本機</strong>,本 App 不會收集、上傳或分享這些資料,開發者也無法存取。移除本 App 即會一併刪除這些本機資料。</p>
+<p>你匯入的書籍、閱讀進度、書籤、書架與各項設定,<strong>預設只儲存在你的裝置本機</strong>,本 App 不會收集、上傳或分享這些資料,開發者也無法存取。移除本 App 即會一併刪除這些本機資料。</p>
+
+<p><strong>唯一的例外是你自己開啟「雲端備份與同步」的時候</strong> —— 那時部分資料會上傳到<strong>你自己的</strong> Google 雲端硬碟,詳見下一節。這個功能<strong>預設關閉</strong>,不開就完全不會有任何上傳。</p>
+
+<h3>雲端備份與同步（選用功能,預設關閉）</h3>
+
+<p>本 App 可以把你的閱讀紀錄放到<strong>你自己的 Google 雲端硬碟</strong>,讓你在多台裝置之間接續閱讀,或在換機/重裝後還原。<strong>這個功能預設關閉</strong>,只有你自己連結 Google 帳號並開啟之後才會運作。</p>
+
+<p><strong>資料存在哪裡</strong>:存在<strong>你自己的</strong> Google 雲端硬碟,放在一個名為 <code>Reboku_EPUB_Reader</code> 的資料夾裡。<strong>開發者沒有伺服器、也無法存取那個資料夾</strong>;那是你的帳號、你的空間、你隨時可以打開來看或直接刪掉。</p>
+
+<p><strong>存取範圍</strong>:本 App 使用 Google 官方的「單檔存取」授權(<code>drive.file</code>),這種授權<strong>只讓 App 看到它自己建立的檔案</strong>。你雲端硬碟裡其他的檔案、文件與照片,本 App <strong>看不到也讀不到</strong>。</p>
+
+<p><strong>會上傳什麼</strong></p>
+
+<ul>
+  <li>閱讀進度、書籤、畫重點、每本書的設定、書架結構。</li>
+  <li><strong>書名與作者</strong> —— 只用來在另一台裝置上告訴你「這些紀錄是哪幾本書的」。少了它,你在另一台只會看到一串看不懂的編號。</li>
+  <li>你手動建立的<strong>備份檔</strong>另含完整書目(書名、作者、檔名、加入日期等)。</li>
+</ul>
+
+<p><strong>不會上傳什麼</strong></p>
+
+<ul>
+  <li><strong>你的書本檔案</strong>(epub / cbz / pdf / txt)<strong>一律不上傳</strong>,解壓後的內容與封面圖也不上傳。</li>
+  <li>帳號、密碼、付款資料一律不上傳(本 App 從來不接觸這些)。</li>
+</ul>
+
+<p><strong>與 Google 的連線</strong>:同步或備份時會連到 Google 雲端硬碟的伺服器,與任何網路請求一樣,Google 會看到你的 IP 位址並依其自身政策處理(參見 Google 隱私權政策)。<strong>這些連線不經過開發者的任何伺服器。</strong></p>
+
+<p><strong>你可以隨時停止</strong></p>
+
+<ul>
+  <li>在〔全域設定 → 儲存 → 雲端同步〕關閉同步,或按〔解除連結〕—— 那會<strong>向 Google 撤銷</strong>本 App 的存取授權。</li>
+  <li>直接到你的 Google 雲端硬碟刪掉 <code>Reboku_EPUB_Reader</code> 整個資料夾。那個資料夾裡放了一份說明檔告訴你它是什麼、刪掉會失去什麼。</li>
+  <li>解除連結或刪除資料夾<strong>不會影響你裝置上的任何資料</strong>,書與進度照常留在本機。</li>
+</ul>
 
 <h3>廣告（僅免費版）</h3>
 
@@ -111,7 +146,42 @@
 
 <h3>Your reading data</h3>
 
-<p>The books you import, your reading positions, bookmarks, shelves, and settings are <strong>stored solely on your device</strong>. The App does not collect, transmit, or share this data, and the developer cannot access it. Uninstalling the App deletes this local data.</p>
+<p>The books you import, your reading positions, bookmarks, shelves, and settings are <strong>stored on your device by default</strong>. The App does not collect, transmit, or share this data, and the developer cannot access it. Uninstalling the App deletes this local data.</p>
+
+<p><strong>The one exception is when you turn on Cloud backup &amp; sync yourself</strong> — some of that data is then uploaded to <strong>your own</strong> Google Drive; see the next section. The feature is <strong>off by default</strong>, and nothing is ever uploaded unless you switch it on.</p>
+
+<h3>Cloud backup &amp; sync (optional, off by default)</h3>
+
+<p>The App can put your reading records in <strong>your own Google Drive</strong> so you can continue reading on another device, or restore after a reinstall or a new phone. <strong>This is off by default</strong> and only runs after you link your Google account and enable it.</p>
+
+<p><strong>Where the data lives</strong>: in <strong>your own</strong> Google Drive, inside a folder named <code>Reboku_EPUB_Reader</code>. <strong>The developer runs no server and cannot access that folder</strong> — it is your account, your storage, and you can open or delete it at any time.</p>
+
+<p><strong>Scope of access</strong>: the App uses Google's official per-file authorization (<code>drive.file</code>), which lets an app see <strong>only the files it created itself</strong>. Everything else in your Drive — your other files, documents and photos — is <strong>invisible and unreadable</strong> to this App.</p>
+
+<p><strong>What is uploaded</strong></p>
+
+<ul>
+  <li>Reading positions, bookmarks, highlights, per-book settings, shelf structure.</li>
+  <li><strong>Titles and authors</strong> — used only so another device can tell you which books those records belong to. Without them you would see a list of unreadable identifiers.</li>
+  <li>A backup file you create manually also contains your full book list (titles, authors, file names, date added, and similar).</li>
+</ul>
+
+<p><strong>What is never uploaded</strong></p>
+
+<ul>
+  <li><strong>Your book files</strong> (epub / cbz / pdf / txt) are <strong>never uploaded</strong>, and neither are unpacked contents or cover images.</li>
+  <li>No account credentials, passwords, or payment details (the App never handles those).</li>
+</ul>
+
+<p><strong>Connections to Google</strong>: syncing or backing up contacts Google Drive's servers. As with any web request, Google sees your IP address and handles it under its own policies (see Google's privacy policy). <strong>None of this passes through any server belonging to the developer.</strong></p>
+
+<p><strong>You can stop at any time</strong></p>
+
+<ul>
+  <li>Turn sync off, or tap Unlink, under Settings → Storage → Cloud sync. Unlinking <strong>revokes</strong> the App's access with Google.</li>
+  <li>Or simply delete the whole <code>Reboku_EPUB_Reader</code> folder from your Google Drive. That folder contains a README explaining what it is and what deleting it loses.</li>
+  <li>Unlinking or deleting the folder <strong>does not affect anything on your device</strong>; your books and progress stay local.</li>
+</ul>
 
 <h3>Ads (free version only)</h3>
 
