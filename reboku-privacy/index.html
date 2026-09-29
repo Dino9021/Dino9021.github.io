@@ -114,9 +114,16 @@
 
 <p>這是 Android 的<strong>一般權限</strong>(安裝時自動授予、不會跳出詢問視窗)。它問到的只有「現在是哪一種連線」這一個是非題,<strong>不會取得 Wi-Fi 名稱、不會取得網路位置、不會知道你連的是哪個基地台或路由器</strong>,而且<strong>這個答案完全留在你的裝置上,不會傳給任何人,也不會被記錄下來</strong>。</p>
 
-<h3>背景朗讀相關權限</h3>
+<h3>背景朗讀與背景匯入相關權限</h3>
 
-<p>為了讓「朗讀」在關閉螢幕或切到其他 App 時能繼續,本 App 具有<strong>前景服務(FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>、<strong>保持喚醒(WAKE_LOCK)</strong> 與<strong>通知(POST_NOTIFICATIONS)</strong> 權限:朗讀進行時會顯示一個媒體控制通知(可暫停/停止),並在句與句之間短暫保持裝置喚醒。這些權限<strong>只在你啟用朗讀時使用</strong>,不涉及任何資料收集或傳輸。</p>
+<p>為了讓「朗讀」與「匯入書籍」在關閉螢幕或切到其他 App 時能繼續,本 App 具有<strong>前景服務(FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK / FOREGROUND_SERVICE_DATA_SYNC)</strong>、<strong>保持喚醒(WAKE_LOCK)</strong> 與<strong>通知(POST_NOTIFICATIONS)</strong> 權限:</p>
+
+<ul>
+  <li><strong>朗讀</strong>進行時會顯示一個媒體控制通知(可暫停/停止),並在句與句之間短暫保持裝置喚醒。</li>
+  <li><strong>匯入書籍</strong>時,本 App 會在你的裝置上整理剛匯入的書(讀取封面與書名等資訊)。整理進行中會顯示一個進度通知(可按「停止背景執行」),並保持裝置喚醒(每次最多 50 分鐘),整理完就立即停止。</li>
+</ul>
+
+<p>這些權限<strong>只在你啟用朗讀、或你自己匯入書籍時使用</strong>,所有處理都在你的裝置上完成,不涉及任何資料收集或傳輸。(2026-09-27 更新:新增背景匯入;先前的版本只寫了朗讀。)</p>
 
 <h3>其他第三方</h3>
 
@@ -208,9 +215,16 @@
 
 <p>This is an Android <strong>normal</strong> permission (granted at install, with no prompt). It answers only the yes/no question "is this Wi-Fi?" — it does <strong>not</strong> reveal the Wi-Fi network name, your network location, or which router or cell tower you are on — and <strong>that answer never leaves your device and is never recorded</strong>.</p>
 
-<h3>Background read-aloud permissions</h3>
+<h3>Background read-aloud and background import permissions</h3>
 
-<p>So "Read aloud" can keep playing with the screen off or while you switch apps, the App holds <strong>foreground-service (FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK)</strong>, <strong>WAKE_LOCK</strong>, and <strong>notification (POST_NOTIFICATIONS)</strong> permissions: while reading aloud, a media-controls notification is shown (pause/stop) and the device is kept briefly awake between sentences. These permissions are <strong>used only while you have read-aloud running</strong> and involve no data collection or transmission.</p>
+<p>So "Read aloud" and "Import books" can keep going with the screen off or while you switch apps, the App holds <strong>foreground-service (FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK / FOREGROUND_SERVICE_DATA_SYNC)</strong>, <strong>WAKE_LOCK</strong>, and <strong>notification (POST_NOTIFICATIONS)</strong> permissions:</p>
+
+<ul>
+  <li>While <strong>reading aloud</strong>, a media-controls notification is shown (pause/stop) and the device is kept briefly awake between sentences.</li>
+  <li>While <strong>importing books</strong>, the App processes the books you just imported on your device (reading covers, titles and similar details). During that processing a progress notification is shown (with "Stop running in background") and the device is kept awake (at most 50 minutes at a time); it stops as soon as the processing is done.</li>
+</ul>
+
+<p>These permissions are <strong>used only while read-aloud is running or while books you imported are being processed</strong>; all processing happens on your device and involves no data collection or transmission. (Updated 2026-09-27: background import added; earlier versions mentioned read-aloud only.)</p>
 
 <h3>Other third parties</h3>
 
