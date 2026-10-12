@@ -55,6 +55,9 @@
   <li><strong>OpenCC / opencc-js</strong>(簡繁轉換字典)— Copyright © 2010-2026 Carbo Kuo and contributors — Apache License 2.0</li>
   <li><strong>Google Mobile Ads SDK</strong>、<strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
   <li><strong>fflate</strong> — Copyright © 2020 Arjun Barrett — MIT License</li>
+  <li><strong>markdown-it</strong>、<strong>markdown-it-footnote</strong>(Markdown 書)— Copyright © 2014 Vitaly Puzrin, Alex Kocharin — MIT License</li>
+  <li><strong>Mermaid</strong>(Markdown 書的圖表)— Copyright © 2014 - 2022 Knut Sveidqvist — MIT License;內含元件見下方〈Mermaid 與其內含元件〉</li>
+  <li><strong>core-js</strong>(讓 Mermaid 在舊版 WebView 執行)— Copyright © 2013–2025 Denis Pushkarev, © 2025–2026 CoreJS Company — MIT License</li>
   <li><strong>esbuild</strong>(僅建置時使用)— Copyright © 2020 Evan Wallace — MIT License</li>
 </ul>
 
@@ -64,11 +67,23 @@
 <p>依該授權第 4 條,謹此聲明:</p>
 <ul>
   <li>本 App <strong>包含</strong>上述以 Apache License 2.0 授權的作品,並保留其著作權、專利、商標與歸屬聲明。</li>
-  <li>本 App <strong>修改過</strong>其中的 <strong>PDF.js</strong>:僅為離線打包與檢視器整合而調整資源路徑與啟動參數,核心程式碼未變更。其餘 Apache 2.0 元件皆以未修改的官方發行版使用。</li>
+  <li>本 App <strong>修改過</strong>其中的 <strong>PDF.js</strong>:僅為離線打包與檢視器整合而調整資源路徑與啟動參數,核心程式碼未變更。<strong>Mermaid 的官方發行檔</strong>(內含 Apache 2.0 的 chevrotain 與 DOMPurify)經 esbuild <strong>自動轉換為舊版 JavaScript 語法</strong>,以便在 Android 7 的 WebView 執行,功能未變更。其餘 Apache 2.0 元件皆以未修改的官方發行版使用。</li>
   <li>各元件依「現狀」提供,不附任何明示或默示之擔保或條件(NO WARRANTIES OR CONDITIONS OF ANY KIND)。</li>
   <li>本聲明不授予任何人使用上述元件之商標權。</li>
 </ul>
 <p>各元件的完整授權條文與 NOTICE 檔以其原始發行版本為準;需要副本可依上方連結取得,或透過商店頁的開發者聯絡方式向我索取。</p>
+
+<h3>Mermaid 與其內含元件</h3>
+<p>Markdown 書裡的 Mermaid 圖表由 <strong>Mermaid 12.1.0</strong> 的官方單檔發行版繪製(匯入書籍時在裝置上執行,不連網)。該發行檔內含下列元件,其著作權歸各自作者所有:</p>
+<ul>
+  <li><strong>MIT License</strong>:Mermaid、@mermaid-js/parser、cytoscape、cytoscape-cose-bilkent、cytoscape-fcose、cose-base、layout-base、dagre-d3-es、KaTeX、khroma、marked、stylis、dayjs、roughjs、lodash-es、es-toolkit、uuid、ts-dedent、@braintree/sanitize-url、@iconify/utils、@upsetjs/venn.js 及其 MIT 授權的相依元件</li>
+  <li><strong>ISC License</strong>:d3 及其子模組(d3-array、d3-scale、d3-shape、d3-selection 等)、delaunator、internmap</li>
+  <li><strong>BSD 3-Clause License</strong>:d3-ease、d3-sankey</li>
+  <li><strong>Apache License 2.0</strong>:chevrotain;<strong>Apache License 2.0 或 Mozilla Public License 2.0</strong>(擇一):DOMPurify — Copyright © Cure53 and other contributors</li>
+  <li><strong>Unlicense</strong>:robust-predicates</li>
+  <li><strong>Eclipse Public License 2.0</strong>:<strong>elkjs</strong>(Eclipse Layout Kernel 的 JavaScript 版)— Copyright © Kiel University and others。依 EPL-2.0,本 App 以目的碼形式散布此元件(僅經上述語法轉換,功能未變更);其<strong>原始碼</strong>可於 <a href="https://github.com/kieler/elkjs">https://github.com/kieler/elkjs</a> 取得,亦可透過商店頁的開發者聯絡方式向我索取。EPL-2.0 全文:<a href="https://www.eclipse.org/legal/epl-2.0/">https://www.eclipse.org/legal/epl-2.0/</a>。</li>
+</ul>
+<p>MIT / ISC / BSD 授權要求保留著作權聲明與授權條文;各元件的完整條文以其原始發行版本為準,需要副本可透過商店頁的開發者聯絡方式向我索取。</p>
 
 <h3>內建字型子集與其授權</h3>
 <p>〔字型推薦〕頁把每一套推薦字型的名稱與說明,用<strong>那套字型自己的字形</strong>顯示。
@@ -128,6 +143,9 @@
   <li><strong>OpenCC / opencc-js</strong> (Chinese conversion dictionaries) — Copyright © 2010-2026 Carbo Kuo and contributors — Apache License 2.0</li>
   <li><strong>Google Mobile Ads SDK</strong>, <strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
   <li><strong>fflate</strong> — Copyright © 2020 Arjun Barrett — MIT License</li>
+  <li><strong>markdown-it</strong>, <strong>markdown-it-footnote</strong> (Markdown books) — Copyright © 2014 Vitaly Puzrin, Alex Kocharin — MIT License</li>
+  <li><strong>Mermaid</strong> (diagrams in Markdown books) — Copyright © 2014 - 2022 Knut Sveidqvist — MIT License; for the components it contains see "Mermaid and the components it contains" below</li>
+  <li><strong>core-js</strong> (lets Mermaid run on older WebViews) — Copyright © 2013–2025 Denis Pushkarev, © 2025–2026 CoreJS Company — MIT License</li>
   <li><strong>esbuild</strong> (build-time only) — Copyright © 2020 Evan Wallace — MIT License</li>
 </ul>
 
@@ -137,11 +155,23 @@
 <p>As required by section 4 of that licence:</p>
 <ul>
   <li>This App <strong>contains</strong> the Apache-2.0 licensed works listed above, and retains their copyright, patent, trademark and attribution notices.</li>
-  <li>This App <strong>modifies</strong> one of them, <strong>PDF.js</strong>: resource paths and viewer start-up parameters were adjusted for offline packaging and integration; its core code is unchanged. Every other Apache-2.0 component is used as an unmodified official release.</li>
+  <li>This App <strong>modifies</strong> one of them, <strong>PDF.js</strong>: resource paths and viewer start-up parameters were adjusted for offline packaging and integration; its core code is unchanged. <strong>Mermaid's official build</strong> (which contains the Apache-2.0 chevrotain and DOMPurify) is <strong>automatically converted to older JavaScript syntax</strong> with esbuild so it runs on Android 7's WebView; its function is unchanged. Every other Apache-2.0 component is used as an unmodified official release.</li>
   <li>The components are provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</li>
   <li>Nothing here grants permission to use the trade names or trademarks of those components.</li>
 </ul>
 <p>The authoritative licence and NOTICE text is the one shipped with each component's own release; a copy is available at the link above or on request through the developer contact on the store listing.</p>
+
+<h3>Mermaid and the components it contains</h3>
+<p>Mermaid diagrams in Markdown books are drawn by the official single-file build of <strong>Mermaid 12.1.0</strong> (run on the device when a book is imported, offline). That build contains the following components, each copyright its respective authors:</p>
+<ul>
+  <li><strong>MIT License</strong>: Mermaid, @mermaid-js/parser, cytoscape, cytoscape-cose-bilkent, cytoscape-fcose, cose-base, layout-base, dagre-d3-es, KaTeX, khroma, marked, stylis, dayjs, roughjs, lodash-es, es-toolkit, uuid, ts-dedent, @braintree/sanitize-url, @iconify/utils, @upsetjs/venn.js and their MIT-licensed dependencies</li>
+  <li><strong>ISC License</strong>: d3 and its modules (d3-array, d3-scale, d3-shape, d3-selection, …), delaunator, internmap</li>
+  <li><strong>BSD 3-Clause License</strong>: d3-ease, d3-sankey</li>
+  <li><strong>Apache License 2.0</strong>: chevrotain; <strong>Apache License 2.0 or Mozilla Public License 2.0</strong> (your choice): DOMPurify — Copyright © Cure53 and other contributors</li>
+  <li><strong>Unlicense</strong>: robust-predicates</li>
+  <li><strong>Eclipse Public License 2.0</strong>: <strong>elkjs</strong> (the JavaScript build of the Eclipse Layout Kernel) — Copyright © Kiel University and others. As EPL-2.0 requires, this App distributes it in object-code form (only converted in syntax as described above, function unchanged); its <strong>source code</strong> is available at <a href="https://github.com/kieler/elkjs">https://github.com/kieler/elkjs</a>, or on request through the developer contact on the store listing. Full EPL-2.0 text: <a href="https://www.eclipse.org/legal/epl-2.0/">https://www.eclipse.org/legal/epl-2.0/</a>.</li>
+</ul>
+<p>The MIT / ISC / BSD licences require their copyright notices and licence text to be kept; the authoritative text is the one shipped with each component's own release, and a copy is available on request through the developer contact on the store listing.</p>
 
 <h3>Bundled font subsets and their licences</h3>
 <p>The font recommendation page shows each recommended font's name and description
