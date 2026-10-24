@@ -42,7 +42,7 @@
 <body>
 <h1>Reboku 隱私權政策 / Privacy Policy</h1>
 
-<p class="updated muted">最後更新 / Last updated: 2026-10-22</p>
+<p class="updated muted">最後更新 / Last updated: 2026-10-24</p>
 
 <hr>
 
@@ -54,7 +54,7 @@
 
 <p>你匯入的書籍、閱讀進度、書籤、書架與各項設定,<strong>預設只儲存在你的裝置本機</strong>,本 App 不會收集、上傳或分享這些資料,開發者也無法存取。移除本 App 即會一併刪除這些本機資料。</p>
 
-<p><strong>唯一的例外是你自己開啟「雲端備份與同步」的時候</strong> —— 那時部分資料會上傳到<strong>你自己的</strong> Google 雲端硬碟,詳見下一節。這個功能<strong>預設關閉</strong>,不開就完全不會有任何上傳。</p>
+<p><strong>例外只有兩種,都要你自己動手</strong>:一是你開啟「雲端備份與同步」 —— 那時部分資料會上傳到<strong>你自己的</strong> Google 雲端硬碟,詳見下一節;這個功能<strong>預設關閉</strong>,不開就完全不會有任何上傳。二是你選取文字後按〔定義〕或〔網路搜尋〕 —— 那時你選的那段文字會送到 Google 搜尋,詳見下方「網路權限」。</p>
 
 <h3>有密碼的 PDF</h3>
 
@@ -111,7 +111,7 @@
 
 <h3>網路權限</h3>
 
-<p>本 App 具有網路(INTERNET)權限,用於:<strong>(1) 免費版的廣告</strong>;<strong>(2) 取得本隱私權政策與版權宣告的最新版本</strong> —— App 會在啟動時於背景抓一次並存在裝置上(每天最多一次),讓你隨時(含離線時)都看得到最新條文,這個背景連線<strong>只會下載這兩份法律文件</strong>、<strong>不會上傳任何東西</strong>,但與任何網頁請求一樣,對方伺服器(GitHub Pages)會看到你的 IP。<strong>App 內其他的說明頁面(例如〔雲端同步〕的〔說明〕)完全不連網</strong> —— 它們是隨 App 打包的,內容跟著版本走;<strong>(3) 向 Google Play 查詢購買狀態</strong>(見上)。未來若加入線上書目 OPDS 亦會用到。<strong>你的閱讀資料本身不會被傳出裝置。</strong></p>
+<p>本 App 具有網路(INTERNET)權限,用於:<strong>(1) 免費版的廣告</strong>;<strong>(2) 每天確認一次目前時間</strong> —— App 每天最多一次向開發者在 GitHub Pages 上的網站送出一個請求,<strong>只讀取對方回覆裡的「目前時間」</strong>,用來計算免費版的時數與次數(例如看廣告換來的免廣告時間),不受手機時鐘被調整影響;這個請求<strong>不下載也不顯示任何內容、不上傳任何東西</strong>,但與任何網頁請求一樣,對方伺服器(GitHub Pages)會看到你的 IP。<strong>本隱私權政策、版權宣告與 App 內所有說明頁面都隨 App 一起打包、完全不連網</strong> —— App 內看到的永遠是你安裝的這個版本所附的那一份(網路上的版本只供商店頁面連結);<strong>(3) 向 Google Play 查詢購買狀態</strong>(見上);<strong>(4) 線上書庫(OPDS)</strong> —— 只在你自己設定並開啟時,連到你填的那台書庫伺服器瀏覽與下載書;<strong>(5) 選取文字後的〔定義〕與〔網路搜尋〕</strong> —— 只在你按下時,把你選取的文字(〔定義〕最多 60 字、〔網路搜尋〕最多 120 字)送到 Google 搜尋,並在 App 內的網頁視窗顯示結果,Google 依其自身政策處理這筆查詢(〔字典 App〕則是交給你裝置上安裝的字典 App 處理)。<strong>除了你主動按下的〔定義〕與〔網路搜尋〕,你的閱讀資料本身不會被傳出裝置。</strong></p>
 
 <h3>網路狀態權限</h3>
 
@@ -160,7 +160,7 @@
 
 <p>The books you import, your reading positions, bookmarks, shelves, and settings are <strong>stored on your device by default</strong>. The App does not collect, transmit, or share this data, and the developer cannot access it. Uninstalling the App deletes this local data.</p>
 
-<p><strong>The one exception is when you turn on Cloud backup &amp; sync yourself</strong> — some of that data is then uploaded to <strong>your own</strong> Google Drive; see the next section. The feature is <strong>off by default</strong>, and nothing is ever uploaded unless you switch it on.</p>
+<p><strong>There are only two exceptions, and both are your own action</strong>: when you turn on Cloud backup &amp; sync — some of that data is then uploaded to <strong>your own</strong> Google Drive, see the next section; the feature is <strong>off by default</strong>, and nothing is ever uploaded unless you switch it on. And when you select text and tap Define or Web search — the text you selected is then sent to Google Search, see "Network permission" below.</p>
 
 <h3>Password-protected PDFs</h3>
 
@@ -217,7 +217,7 @@
 
 <h3>Network permission</h3>
 
-<p>The App holds the INTERNET permission for: <strong>(1) ads in the free version</strong>; <strong>(2) fetching the latest version of this privacy policy and the copyright notice</strong> — the App downloads them once in the background at startup (at most once a day) and stores them on your device, so you can always read the current text, including offline. That background request downloads <strong>only those two legal documents</strong> and <strong>uploads nothing</strong>, though — as with any web request — the serving host (GitHub Pages) sees your IP address. <strong>Other in-app help pages (such as the "Why?" button under Cloud sync) make no network requests at all</strong> — they ship inside the App, so their contents always match your installed version; <strong>(3) checking your purchase state with Google Play</strong> (see above). An online OPDS catalog may use it in future. <strong>Your reading data itself is not sent off the device.</strong></p>
+<p>The App holds the INTERNET permission for: <strong>(1) ads in the free version</strong>; <strong>(2) checking the current time once a day</strong> — at most once a day the App sends one request to the developer's website on GitHub Pages and <strong>reads only the "current time" in its reply</strong>, to count the free version's hours and allowances (for example the ad-free time earned by watching an ad) without being affected by a changed phone clock; that request <strong>downloads and shows nothing and uploads nothing</strong>, though — as with any web request — the serving host (GitHub Pages) sees your IP address. <strong>This privacy policy, the copyright notice and every in-app help page ship inside the App and make no network requests</strong> — what you read in the App is always the copy that came with your installed version (the online copies exist for the store listing); <strong>(3) checking your purchase state with Google Play</strong> (see above); <strong>(4) online catalogs (OPDS)</strong> — only when you set one up yourself, to browse and download books from the server you entered; <strong>(5) Define and Web search on selected text</strong> — only when you tap them, the text you selected (up to 60 characters for Define, 120 for Web search) is sent to Google Search and the result is shown in an in-app web view; Google handles that query under its own policies (Dictionary app hands the text to the dictionary app installed on your device). <strong>Apart from the Define and Web search you tap yourself, your reading data itself is not sent off the device.</strong></p>
 
 <h3>Network-state permission</h3>
 
