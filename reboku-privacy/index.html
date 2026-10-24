@@ -42,7 +42,7 @@
 <body>
 <h1>Reboku 隱私權政策 / Privacy Policy</h1>
 
-<p class="updated muted">最後更新 / Last updated: 2026-09-30</p>
+<p class="updated muted">最後更新 / Last updated: 2026-10-22</p>
 
 <hr>
 
@@ -55,6 +55,10 @@
 <p>你匯入的書籍、閱讀進度、書籤、書架與各項設定,<strong>預設只儲存在你的裝置本機</strong>,本 App 不會收集、上傳或分享這些資料,開發者也無法存取。移除本 App 即會一併刪除這些本機資料。</p>
 
 <p><strong>唯一的例外是你自己開啟「雲端備份與同步」的時候</strong> —— 那時部分資料會上傳到<strong>你自己的</strong> Google 雲端硬碟,詳見下一節。這個功能<strong>預設關閉</strong>,不開就完全不會有任何上傳。</p>
+
+<h3>有密碼的 PDF</h3>
+
+<p>打開有密碼的 PDF 時,本 App 會請你輸入密碼,只用來在你的裝置上解開這本書。<strong>只有你勾選〔記住密碼〕時</strong>才會把它存起來:它只以<strong>加密</strong>方式存在這台裝置(由 Android 系統金鑰庫保護),<strong>不會上傳、不會納入任何備份或匯出檔、不會同步到其他裝置</strong>,開發者也無法取得;刪除這本書就會一併刪除它。沒有勾選時,密碼不會被存下來。若這台裝置的系統金鑰庫無法使用,〔記住密碼〕不會出現。</p>
 
 <h3>雲端備份與同步（選用功能,預設關閉）</h3>
 
@@ -76,7 +80,7 @@
 
 <ul>
   <li><strong>你的書本檔案</strong>(epub / cbz / pdf / txt)<strong>一律不上傳</strong>,解壓後的內容與封面圖也不上傳。</li>
-  <li>帳號、密碼、付款資料一律不上傳(本 App 從來不接觸這些)。</li>
+  <li>帳號、密碼、付款資料一律不上傳到開發者或任何第三方。例外只有兩種你自己決定的情形:你設定的書庫伺服器(OPDS),帳號與密碼只會送給你輸入的那個伺服器本身;有密碼的 PDF 的密碼只用在這台裝置上,見下方〈有密碼的 PDF〉。</li>
 </ul>
 
 <p><strong>與 Google 的連線</strong>:同步或備份時會連到 Google 雲端硬碟的伺服器,與任何網路請求一樣,Google 會看到你的 IP 位址並依其自身政策處理(參見 Google 隱私權政策)。<strong>這些連線不經過開發者的任何伺服器。</strong></p>
@@ -158,6 +162,10 @@
 
 <p><strong>The one exception is when you turn on Cloud backup &amp; sync yourself</strong> — some of that data is then uploaded to <strong>your own</strong> Google Drive; see the next section. The feature is <strong>off by default</strong>, and nothing is ever uploaded unless you switch it on.</p>
 
+<h3>Password-protected PDFs</h3>
+
+<p>When you open a password-protected PDF, the App asks for its password and uses it only to unlock that book on your device. <strong>Only if you tick "Remember password"</strong> is it stored: <strong>encrypted</strong>, on this device only (protected by the Android Keystore), <strong>never uploaded, never included in any backup or export file, and never synced to another device</strong>, and the developer cannot obtain it. Deleting the book deletes it. If you do not tick the box, the password is not stored. If this device's system keystore is unavailable, "Remember password" is not offered.</p>
+
 <h3>Cloud backup &amp; sync (optional, off by default)</h3>
 
 <p>The App can put your reading records in <strong>your own Google Drive</strong> so you can continue reading on another device, or restore after a reinstall or a new phone. <strong>This is off by default</strong> and only runs after you link your Google account and enable it.</p>
@@ -178,7 +186,7 @@
 
 <ul>
   <li><strong>Your book files</strong> (epub / cbz / pdf / txt) are <strong>never uploaded</strong>, and neither are unpacked contents or cover images.</li>
-  <li>No account credentials, passwords, or payment details (the App never handles those).</li>
+  <li>No account credentials, passwords, or payment details are uploaded to the developer or to any third party. There are only two cases, both your own choice: the username and password of a library server (OPDS) you set up are sent only to that very server; the password of a password-protected PDF is used on this device only — see "Password-protected PDFs" below.</li>
 </ul>
 
 <p><strong>Connections to Google</strong>: syncing or backing up contacts Google Drive's servers. As with any web request, Google sees your IP address and handles it under its own policies (see Google's privacy policy). <strong>None of this passes through any server belonging to the developer.</strong></p>
