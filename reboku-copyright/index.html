@@ -28,13 +28,22 @@
 <body>
 
 <h1>Reboku 版權宣告 / Copyright Notice</h1>
-<p class="updated">最後更新 / Last updated: 2026-10-22</p>
+<p class="updated">最後更新 / Last updated: 2026-11-08</p>
+<!--
+  Platform blocks (owner 2026-11-08 Q-272-2 = A): each app's copy keeps only its own blocks; the web page shows all.
+  Rules and markers: the header of Shared/tools/platform-blocks.mjs.
+-->
 
 <hr>
 
 <h2>正體中文</h2>
 
-<p><strong>Reboku</strong>(套件名 <code>com.reboku.reader</code>,以下稱「本 App」)為個人開發的電子書閱讀器。</p>
+<!-- only:android -->
+<p><strong>Reboku</strong>(Android 版,套件名 <code>com.reboku.reader</code>,以下稱「本 App」)為個人開發的電子書閱讀器。</p>
+<!-- /only -->
+<!-- only:ios -->
+<p><strong>Reboku</strong>(iPad / iPhone 版,Bundle ID <code>com.dino9021.reboku</code>,以下稱「本 App」)為個人開發的電子書閱讀器。</p>
+<!-- /only -->
 
 <h3>軟體著作權</h3>
 <p>本 App 的程式碼、介面設計、圖示與說明文件著作權歸開發者 <strong>Dino9021</strong> 所有,並保留一切權利(© 2026 Dino9021. All rights reserved.)。未經書面同意,不得重製、散布、改作、還原工程或作為衍生作品發行。</p>
@@ -48,12 +57,8 @@
 <h3>第三方元件與授權</h3>
 <p>本 App 使用下列第三方元件,其著作權歸各自作者所有:</p>
 <ul>
-  <li><strong>Android Open Source Project</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
-  <li><strong>AndroidX / Jetpack Compose</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
-  <li><strong>Kotlin</strong> 標準函式庫與 coroutines — Copyright © 2010-2026 JetBrains s.r.o. and Kotlin Programming Language contributors — Apache License 2.0</li>
   <li><strong>PDF.js</strong> — Copyright © Mozilla Foundation — Apache License 2.0</li>
   <li><strong>OpenCC / opencc-js</strong>(簡繁轉換字典)— Copyright © 2010-2026 Carbo Kuo and contributors — Apache License 2.0</li>
-  <li><strong>Google Mobile Ads SDK</strong>、<strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
   <li><strong>fflate</strong> — Copyright © 2020 Arjun Barrett — MIT License</li>
   <li><strong>markdown-it</strong>、<strong>markdown-it-footnote</strong>(Markdown 書)— Copyright © 2014 Vitaly Puzrin, Alex Kocharin — MIT License</li>
   <li><strong>opencc-js</strong> 1.4.1(簡繁轉換程式)— Copyright (c) 2020-2021 The nk2028 Project — MIT License</li>
@@ -66,6 +71,21 @@
   <li><strong>core-js</strong>(讓 Mermaid 在舊版 WebView 執行)— Copyright © 2013–2025 Denis Pushkarev, © 2025–2026 CoreJS Company — MIT License</li>
   <li><strong>esbuild</strong>(僅建置時使用)— Copyright © 2020 Evan Wallace — MIT License</li>
 </ul>
+<!-- only:android -->
+<p><strong>Android 版</strong>另使用:</p>
+<ul>
+  <li><strong>Android Open Source Project</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
+  <li><strong>AndroidX / Jetpack Compose</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
+  <li><strong>Kotlin</strong> 標準函式庫與 coroutines — Copyright © 2010-2026 JetBrains s.r.o. and Kotlin Programming Language contributors — Apache License 2.0</li>
+  <li><strong>Google Mobile Ads SDK</strong>、<strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
+</ul>
+<!-- /only -->
+<!-- only:ios -->
+<p><strong>iPad / iPhone 版</strong>另使用:</p>
+<ul>
+  <li><strong>Google Mobile Ads SDK</strong> — Copyright © Google LLC — Google APIs Terms of Service</li>
+</ul>
+<!-- /only -->
 
 <h3>Apache License 2.0 聲明</h3>
 <p>上列標示 Apache License 2.0 的元件依該授權條款散布。授權全文:
@@ -73,7 +93,7 @@
 <p>依該授權第 4 條,謹此聲明:</p>
 <ul>
   <li>本 App <strong>包含</strong>上述以 Apache License 2.0 授權的作品,並保留其著作權、專利、商標與歸屬聲明。</li>
-  <li>本 App <strong>修改過</strong>其中的 <strong>PDF.js</strong>:僅為離線打包與檢視器整合而調整資源路徑與啟動參數,核心程式碼未變更。<strong>Mermaid 的官方發行檔</strong>(內含 Apache 2.0 的 chevrotain 與 DOMPurify)經 esbuild <strong>自動轉換為舊版 JavaScript 語法</strong>,以便在 Android 7 的 WebView 執行,功能未變更。其餘 Apache 2.0 元件皆以未修改的官方發行版使用。</li>
+  <li>本 App <strong>修改過</strong>其中的 <strong>PDF.js</strong>:僅為離線打包與檢視器整合而調整資源路徑與啟動參數,核心程式碼未變更。<strong>Mermaid 的官方發行檔</strong>(內含 Apache 2.0 的 chevrotain 與 DOMPurify)經 esbuild <strong>自動轉換為舊版 JavaScript 語法</strong>,以便在舊版 WebView 執行,功能未變更。其餘 Apache 2.0 元件皆以未修改的官方發行版使用。</li>
   <li>各元件依「現狀」提供,不附任何明示或默示之擔保或條件(NO WARRANTIES OR CONDITIONS OF ANY KIND)。</li>
   <li>本聲明不授予任何人使用上述元件之商標權。</li>
 </ul>
@@ -116,19 +136,31 @@
 宣稱其為原字型。</p>
 
 <h3>商標</h3>
-<p>「Reboku」與本 App 圖示為開發者所有。Google Play 與 Android 為 Google LLC 的商標。其他提及的名稱屬於各自所有者。</p>
+<p>「Reboku」與本 App 圖示為開發者所有。</p>
+<!-- only:android -->
+<p>Google Play 與 Android 為 Google LLC 的商標。</p>
+<!-- /only -->
+<!-- only:ios -->
+<p>App Store 為 Apple Inc. 的商標。</p>
+<!-- /only -->
+<p>其他提及的名稱屬於各自所有者。</p>
 
 <h3>免責聲明</h3>
 <p>本 App 以「現狀」提供,不附任何明示或默示之擔保。開發者不對因使用或無法使用本 App 所生之任何損失負責,包括但不限於資料遺失。請自行保留重要檔案的備份。</p>
 
 <h3>聯絡</h3>
-<p>版權相關問題請透過 Google Play 商店頁的開發者聯絡方式與我聯繫。</p>
+<p>版權相關問題請透過本 App 商店頁的開發者聯絡方式與我聯繫。</p>
 
 <hr>
 
 <h2>English</h2>
 
-<p><strong>Reboku</strong> (package <code>com.reboku.reader</code>, "the App") is an e-book reader developed by an individual.</p>
+<!-- only:android -->
+<p><strong>Reboku</strong> (Android edition, package <code>com.reboku.reader</code>, "the App") is an e-book reader developed by an individual.</p>
+<!-- /only -->
+<!-- only:ios -->
+<p><strong>Reboku</strong> (iPad / iPhone edition, bundle ID <code>com.dino9021.reboku</code>, "the App") is an e-book reader developed by an individual.</p>
+<!-- /only -->
 
 <h3>Software copyright</h3>
 <p>The App's source code, interface design, icons and documentation are © 2026 <strong>Dino9021</strong>. All rights reserved. They may not be copied, distributed, modified, reverse-engineered or released as derivative works without written permission.</p>
@@ -142,12 +174,8 @@
 <h3>Third-party components and licences</h3>
 <p>The App includes the following third-party components; copyright in each remains with its authors:</p>
 <ul>
-  <li><strong>Android Open Source Project</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
-  <li><strong>AndroidX / Jetpack Compose</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
-  <li><strong>Kotlin</strong> standard library and coroutines — Copyright © 2010-2026 JetBrains s.r.o. and Kotlin Programming Language contributors — Apache License 2.0</li>
   <li><strong>PDF.js</strong> — Copyright © Mozilla Foundation — Apache License 2.0</li>
   <li><strong>OpenCC / opencc-js</strong> (Chinese conversion dictionaries) — Copyright © 2010-2026 Carbo Kuo and contributors — Apache License 2.0</li>
-  <li><strong>Google Mobile Ads SDK</strong>, <strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
   <li><strong>fflate</strong> — Copyright © 2020 Arjun Barrett — MIT License</li>
   <li><strong>markdown-it</strong>, <strong>markdown-it-footnote</strong> (Markdown books) — Copyright © 2014 Vitaly Puzrin, Alex Kocharin — MIT License</li>
   <li><strong>opencc-js</strong> 1.4.1 (Chinese conversion code) — Copyright (c) 2020-2021 The nk2028 Project — MIT License</li>
@@ -160,6 +188,21 @@
   <li><strong>core-js</strong> (lets Mermaid run on older WebViews) — Copyright © 2013–2025 Denis Pushkarev, © 2025–2026 CoreJS Company — MIT License</li>
   <li><strong>esbuild</strong> (build-time only) — Copyright © 2020 Evan Wallace — MIT License</li>
 </ul>
+<!-- only:android -->
+<p>The <strong>Android edition</strong> also uses:</p>
+<ul>
+  <li><strong>Android Open Source Project</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
+  <li><strong>AndroidX / Jetpack Compose</strong> — Copyright © The Android Open Source Project — Apache License 2.0</li>
+  <li><strong>Kotlin</strong> standard library and coroutines — Copyright © 2010-2026 JetBrains s.r.o. and Kotlin Programming Language contributors — Apache License 2.0</li>
+  <li><strong>Google Mobile Ads SDK</strong>, <strong>Google Play Billing Library</strong> — Copyright © Google LLC — Android Software Development Kit License / Google APIs Terms of Service</li>
+</ul>
+<!-- /only -->
+<!-- only:ios -->
+<p>The <strong>iPad / iPhone edition</strong> also uses:</p>
+<ul>
+  <li><strong>Google Mobile Ads SDK</strong> — Copyright © Google LLC — Google APIs Terms of Service</li>
+</ul>
+<!-- /only -->
 
 <h3>Apache License 2.0 notice</h3>
 <p>The components marked Apache License 2.0 above are distributed under that licence. Full text:
@@ -167,7 +210,7 @@
 <p>As required by section 4 of that licence:</p>
 <ul>
   <li>This App <strong>contains</strong> the Apache-2.0 licensed works listed above, and retains their copyright, patent, trademark and attribution notices.</li>
-  <li>This App <strong>modifies</strong> one of them, <strong>PDF.js</strong>: resource paths and viewer start-up parameters were adjusted for offline packaging and integration; its core code is unchanged. <strong>Mermaid's official build</strong> (which contains the Apache-2.0 chevrotain and DOMPurify) is <strong>automatically converted to older JavaScript syntax</strong> with esbuild so it runs on Android 7's WebView; its function is unchanged. Every other Apache-2.0 component is used as an unmodified official release.</li>
+  <li>This App <strong>modifies</strong> one of them, <strong>PDF.js</strong>: resource paths and viewer start-up parameters were adjusted for offline packaging and integration; its core code is unchanged. <strong>Mermaid's official build</strong> (which contains the Apache-2.0 chevrotain and DOMPurify) is <strong>automatically converted to older JavaScript syntax</strong> with esbuild so it runs on older WebViews; its function is unchanged. Every other Apache-2.0 component is used as an unmodified official release.</li>
   <li>The components are provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</li>
   <li>Nothing here grants permission to use the trade names or trademarks of those components.</li>
 </ul>
@@ -211,13 +254,20 @@ clause 2 of that licence, the copyright notices are:</p>
 present themselves as the original fonts.</p>
 
 <h3>Trademarks</h3>
-<p>"Reboku" and the App icon belong to the developer. Google Play and Android are trademarks of Google LLC. Other names mentioned belong to their respective owners.</p>
+<p>"Reboku" and the App icon belong to the developer.</p>
+<!-- only:android -->
+<p>Google Play and Android are trademarks of Google LLC.</p>
+<!-- /only -->
+<!-- only:ios -->
+<p>App Store is a trademark of Apple Inc.</p>
+<!-- /only -->
+<p>Other names mentioned belong to their respective owners.</p>
 
 <h3>Disclaimer</h3>
 <p>The App is provided "as is", without warranty of any kind, express or implied. The developer is not liable for any loss arising from use of, or inability to use, the App, including but not limited to data loss. Please keep your own backups of important files.</p>
 
 <h3>Contact</h3>
-<p>For copyright matters, please reach me through the developer contact on the Google Play listing.</p>
+<p>For copyright matters, please reach me through the developer contact on the App's store listing.</p>
 
 </body>
 </html>
